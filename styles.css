@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oxygen:wght@400;700&display=swap");
+
+:root {
+  --palette-offwhite: #fdfafa;
+  --palette-pink: #f89fa1;
+  --palette-yellow: #ffd257;
+  --palette-green: #42c597;
+  --palette-blue: #36a1d3;
+  --palette-purple: #b979e0;
+  --text-color: rgb(71, 71, 71);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--palette-blue);
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--palette-offwhite);
+  color: var(--text-color);
+}
+.nav-container {
+  grid-column: 1/15;
+  height: 40px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--palette-offwhite);
+  box-shadow: 0 2px 0 rgb(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav-branding {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+.page-container {
+  display: grid;
+  grid-template-columns: 5vw repeat(12, 1fr) 5vw;
+}
+
+.page-header {
+  margin-top: 40px;
+  padding: 150px 0;
+  grid-column: 1/15;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.page-header-wrapper {
+  margin: 0 12.5vw;
+}
+
+.header-title {
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+  font-family: "Oxygen";
+  text-align: center;
+}
+
+.header-separator {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.separator-left {
+  border-top: 1px solid #000;
+  flex: 1;
+}
+
+.separator-text {
+  margin: 0 15px;
+  padding-bottom: 5px;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+.separator-right {
+  border-top: 1px solid #000;
+  flex: 1;
+}
+
+.header-subtitle {
+  grid-column: 2/14;
+  font-size: 1rem;
+  font-family: "Lato";
+  text-align: center;
+}
+
+.content {
+  margin-top: 40px;
+  grid-column: 1/15;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+  margin: 0 12.5vw;
+}
+
+.portfolio-separator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
