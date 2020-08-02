@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jeremy Hage WebDev</title>
     <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <!-- Nav Bar -->
     <nav class="nav-container">
       <div class="nav-branding">
         <div class="nav-branding_logo">
@@ -16,6 +18,8 @@
       </div>
       <div class="nav-job-title">Full Stack WebDev</div>
     </nav>
+
+    <!-- Page Header -->
     <div class="page-container" id="top">
       <header class="page-header">
         <div class="page-header-wrapper">
@@ -30,17 +34,64 @@
           A web developer based in Seoul, South Korea
         </p>
       </header>
-
-      <section class="content portfolio">
+      
+      <!-- Portfolio -->
+      <section class="content-section portfolio">
         <div class="content-wrapper">
-          <div class="portfolio-separator">
+          <div class="section-header portfolio-header">
             <div class="separator-left"></div>
             <div class="separator-text">Portfolio</div>
             <div class="separator-right"></div>
           </div>
           <a href="#top">just a link</a>
+          <div class="card-wrapper-portfolio">
+            <div class="card-portfolio port1" data-aos-easing="ease-in" data-aos="fade-up"  data-aos-anchor-placement="center-bottom">
+              <img class="card-image" src="#" alt="i">
+              <h4 class="card-title">Card Title</h1>
+              <p class="card-text">card text</p>
+              <a href="#" class="card-link">GitHub</a> <!-- github icon -->
+            </div>
+            <div class="card-portfolio port2" data-aos-easing="ease-in" data-aos="fade-up"  data-aos-anchor-placement="center-bottom">
+              <img class="card-image" src="#" alt="i">
+              <h4 class="card-title">Card Title</h1>
+              <p class="card-text">card text</p>
+              <a href="#" class="card-link">GitHub</a> <!-- github icon -->
+            </div>
+            <div class="card-portfolio port3" data-aos-easing="ease-in" data-aos="fade-up"  data-aos-anchor-placement="center-bottom">
+              <img class="card-image" src="#" alt="i">
+              <h4 class="card-title">Card Title</h1>
+              <p class="card-text">card text</p>
+              <a href="#" class="card-link">GitHub</a> <!-- github icon -->
+            </div>
+            <div class="card-portfolio port4" data-aos-easing="ease-in" data-aos="fade-up"  data-aos-anchor-placement="center-bottom">
+              <img class="card-image" src="#" alt="i">
+              <h4 class="card-title">Card Title</h1>
+              <p class="card-text">card text</p>
+              <a href="#" class="card-link">GitHub</a> <!-- github icon -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me  -->
+      <section class="content-section about-me">
+        <div class="content-wrapper">
+          <div class="section-header">
+            <div class="separator-left"></div>
+            <div class="separator-text">About Me</div>
+            <div class="separator-right"></div>
+          </div>
+          <div class="card-wrapper-about-me">
+            <div class="card-about-me bio"><p class="about-text bio">I'm from the US, living in Seoul, KR</p></div>
+            <div class="card-about-me skills"><p class="about-text skills">Full stack: Frontend - Vanilla JS / React, Backend - </p></div>
+            <div class="card-about-me interests"><p class="about-text interests"></p></div>
+          </div>
         </div>
       </section>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
