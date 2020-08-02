@@ -8,6 +8,8 @@
   --palette-blue: #36a1d3;
   --palette-purple: #b979e0;
   --text-color: rgb(71, 71, 71);
+
+  --header-color: #38777e;
 }
 
 * {
@@ -19,12 +21,17 @@
 a {
   color: var(--palette-blue);
 }
-
+/* 
+a:visited {
+  color: var(--palette-pink);
+} */
 body {
   font-family: sans-serif;
   background-color: var(--palette-offwhite);
   color: var(--text-color);
 }
+
+/* --------------------------------------- Navigation Bar ---------------------------------------*/
 .nav-container {
   grid-column: 1/15;
   height: 40px;
@@ -38,6 +45,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
 }
 
 .nav-branding {
@@ -46,8 +56,11 @@ body {
   align-items: center;
   height: 100%;
 }
+
+/* --------------------------------------- Page Container ---------------------------------------*/
 .page-container {
   display: grid;
+  position: relative;
   grid-template-columns: 5vw repeat(12, 1fr) 5vw;
 }
 
@@ -62,11 +75,14 @@ body {
   margin: 0 16.5vw;
 }
 
+/* --------------------------------------- Header ---------------------------------------*/
+
 .header-title {
   margin-bottom: 15px;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   font-family: 'Oxygen';
   text-align: center;
+  color: var(--header-color);
 }
 
 .header-separator {
@@ -77,7 +93,7 @@ body {
   font-size: 1.5rem;
 }
 .separator-left {
-  border-top: 1px solid #000;
+  border-top: 1px solid rgb(0, 0, 0, 0.3);
   flex: 1;
 }
 
@@ -86,10 +102,11 @@ body {
   padding-bottom: 5px;
   font-family: 'Lato';
   font-weight: 300;
+  color: var(--header-color);
 }
 
 .separator-right {
-  border-top: 1px solid #000;
+  border-top: 1px solid rgb(0, 0, 0, 0.3);
   flex: 1;
 }
 
@@ -99,6 +116,7 @@ body {
   text-align: center;
 }
 
+/* --------------------------------------- Content ---------------------------------------*/
 .content-section {
   margin-top: 40px;
   grid-column: 1/15;
@@ -114,8 +132,10 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
+  color: var(--header-color);
 }
 
+/* --------------------------------------- Cards ---------------------------------------*/
 .card-wrapper-portfolio {
   display: flex;
   padding: 5px;
@@ -128,7 +148,8 @@ body {
   display: flex;
   flex: 1 1 300px;
   max-width: 500px;
-  border: 2px solid red;
+  height: 300px;
+  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.3);
 }
 
 .card-wrapper-about-me {
@@ -143,4 +164,52 @@ body {
   margin: 10px;
   width: 100%;
   border: 1px solid red;
+}
+
+.portfolio-text-wrapper {
+  padding: 5px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  text-align: center;
+}
+.card-technologies {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.technology-icon {
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+/* --------------------------------------- Sidebar ---------------------------------------*/
+
+.sections-sidebar {
+  position: fixed;
+  top: 42px;
+  right: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 7px;
+}
+
+.sidebar {
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-left: 1px solid rgb(0, 0, 0, 0.1);
 }

@@ -26,7 +26,7 @@
           <h1 class="header-title" id="gogo">Hello, I'm Jeremy</h1>
           <div class="header-separator">
             <div class="separator-left"></div>
-            <div class="separator-text">sdfsa</div>
+            <div class="separator-text">Full Stack Web Developer</div>
             <div class="separator-right"></div>
           </div>
         </div>
@@ -34,47 +34,59 @@
           A web developer based in Seoul, South Korea
         </p>
       </header>
-      
       <!-- Portfolio -->
-      <section class="content-section portfolio">
-        <div class="content-wrapper">
+      <section class="content-section portfolio" >
+        <div class="content-wrapper" id='portfolio'>
           <div class="section-header portfolio-header">
             <div class="separator-left"></div>
             <div class="separator-text">Portfolio</div>
             <div class="separator-right"></div>
           </div>
-          <a href="#top">just a link</a>
           <div class="card-wrapper-portfolio">
             <div class="card-portfolio port1" data-aos-easing="ease-in" data-aos="fade-up"  data-aos-anchor-placement="center-bottom">
-              <img class="card-image" src="#" alt="i">
-              <h4 class="card-title">Card Title</h1>
-              <p class="card-text">card text</p>
-              <a href="#" class="card-link">GitHub</a> <!-- github icon -->
+              <img class="card-image" src="https://picsum.photos/250" alt="i">
+              <div class="portfolio-text-wrapper">
+                <h4 class="card-title">Card Title</h1>
+                <p class="card-text">I am some filler text. I will describe the project I have linked.</p>
+                <a href="#" class="card-link">GitHub</a> <!-- github icon -->
+              </div>
             </div>
             <div class="card-portfolio port2" data-aos-easing="ease-in" data-aos="fade-up"  data-aos-anchor-placement="center-bottom">
-              <img class="card-image" src="#" alt="i">
-              <h4 class="card-title">Card Title</h1>
-              <p class="card-text">card text</p>
-              <a href="#" class="card-link">GitHub</a> <!-- github icon -->
+              <img class="card-image" src="https://picsum.photos/250" alt="i">
+              <div class="portfolio-text-wrapper">
+                <h4 class="card-title">Card Title</h1>
+                <p class="card-text">I am some filler text. I will describe the project I have linked.</p>
+                <a href="#" class="card-link">GitHub</a> <!-- github icon -->
+              </div>
             </div>
             <div class="card-portfolio port3" data-aos-easing="ease-in" data-aos="fade-up"  data-aos-anchor-placement="center-bottom">
-              <img class="card-image" src="#" alt="i">
-              <h4 class="card-title">Card Title</h1>
-              <p class="card-text">card text</p>
-              <a href="#" class="card-link">GitHub</a> <!-- github icon -->
+              <img class="card-image" src="https://picsum.photos/250" alt="i">
+              <div class="portfolio-text-wrapper">
+                <h4 class="card-title">Little Weather App</h1>
+                <p class="card-text">A small app with dynamic backgrounds to check the current weather of any city around the world.</p>
+                <a href="https://github.com/Kimchi-Coder/weather-app" class="card-link">GitHub</a> <!-- github icon -->
+              </div>
             </div>
             <div class="card-portfolio port4" data-aos-easing="ease-in" data-aos="fade-up"  data-aos-anchor-placement="center-bottom">
-              <img class="card-image" src="#" alt="i">
-              <h4 class="card-title">Card Title</h1>
-              <p class="card-text">card text</p>
-              <a href="#" class="card-link">GitHub</a> <!-- github icon -->
+              <img class="card-image" src="https://picsum.photos/250" alt="i">
+              <div class="portfolio-text-wrapper">
+                <h4 class="card-title">Travel Diary</h1>
+                <p class="card-text">An app where users can place pins of places they've been</p>
+                <ul class="card-technologies">
+                  <li class="technology"><img class='technology-icon' src="./assets/mongodb.svg" alt="MongoDB"></li>
+                  <li class="technology"><img class='technology-icon' src="#" alt="ExpressJS"></li>
+                  <li class="technology"><img class='technology-icon' src="./assets/react.svg" alt="ReactJS"></li>
+                  <li class="technology"><img class='technology-icon' src="./assets/nodejs.svg" alt="NodeJS"></li>
+                </ul>
+                <a href="https://github.com/Kimchi-Coder/pokemon-map" class="card-link">GitHub</a> <!-- github icon -->
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- About Me  -->
-      <section class="content-section about-me">
+      <section class="content-section about-me" id='about-me'>
         <div class="content-wrapper">
           <div class="section-header">
             <div class="separator-left"></div>
@@ -84,10 +96,32 @@
           <div class="card-wrapper-about-me">
             <div class="card-about-me bio"><p class="about-text bio">I'm from the US, living in Seoul, KR</p></div>
             <div class="card-about-me skills"><p class="about-text skills">Full stack: Frontend - Vanilla JS / React, Backend - </p></div>
-            <div class="card-about-me interests"><p class="about-text interests"></p></div>
+            <div class="card-about-me interests"><p class="about-text interests">I like learning languages</p></div>
           </div>
         </div>
       </section>
+    </div>
+
+    <!-- Contact -->
+    <section class="content-section contact" id='contact' >
+      <div class="content-wrapper"><div class="section-header">
+        <div class="separator-left"></div>
+        <div class="separator-text">Contact</div>
+        <div class="separator-right"></div>
+      </div></div>
+    </section>
+    <!-- Sidebar -->
+    <div class="sections-sidebar">
+      <div class="sidebar js-sidebar">
+        <div class="sidebar-wrapper">
+          <ul class="sidebar-items">
+            <li class="sidebar-item"><a href="#top">Top</a></li>
+            <li class="sidebar-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="sidebar-item"><a href="#about-me">About Me</a></li>
+            <li class="sidebar-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
