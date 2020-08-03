@@ -10,6 +10,8 @@
   --text-color: rgb(71, 71, 71);
 
   --header-color: #38777e;
+
+  font-size: 16px;
 }
 
 * {
@@ -25,18 +27,24 @@ a {
 a:visited {
   color: var(--palette-pink);
 } */
+
 body {
   font-family: sans-serif;
   background-color: var(--palette-offwhite);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
+.title {
+  padding-bottom: 5px;
+  color: var(--header-color);
+}
 /* --------------------------------------- Navigation Bar ---------------------------------------*/
 .nav-container {
   grid-column: 1/15;
   height: 40px;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,6 +63,17 @@ body {
   justify-content: flex-start;
   align-items: center;
   height: 100%;
+}
+
+.nav-branding-logo {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+  fill: var(--header-color);
+}
+
+.nav-branding-name {
+  padding-left: 10px;
 }
 
 /* --------------------------------------- Page Container ---------------------------------------*/
@@ -102,6 +121,7 @@ body {
   padding-bottom: 5px;
   font-family: 'Lato';
   font-weight: 300;
+  text-align: center;
   color: var(--header-color);
 }
 
@@ -138,7 +158,7 @@ body {
 /* --------------------------------------- Cards ---------------------------------------*/
 .card-wrapper-portfolio {
   display: flex;
-  padding: 5px;
+  padding: 2.5vw;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -146,28 +166,22 @@ body {
 .card-portfolio {
   margin: 10px;
   display: flex;
-  flex: 1 1 300px;
-  max-width: 500px;
-  height: 300px;
+  flex: 1 1 30vw;
   box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.3);
 }
 
-.card-wrapper-about-me {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 5px;
-  justify-content: center;
-  align-items: center;
+.img-wrapper {
+  min-width: 15vw;
 }
 
-.card-about-me {
-  margin: 10px;
+img.card-image {
+  object-fit: fill;
   width: 100%;
-  border: 1px solid red;
+  height: 100%;
 }
 
 .portfolio-text-wrapper {
-  padding: 5px;
+  padding: 2vw;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -176,6 +190,12 @@ body {
 
 .card-title {
   text-align: center;
+  font-size: 2rem;
+}
+
+.card-text {
+  font-size: calc(1rem + 0.3vw);
+  padding-bottom: 5px;
 }
 .card-technologies {
   display: flex;
@@ -184,9 +204,79 @@ body {
 }
 
 .technology-icon {
-  line-height: 30px;
-  width: 30px;
-  height: 30px;
+  font-size: calc(1rem + 0.3vw);
+  padding: 0 5px;
+  line-height: 5vw;
+  width: 5vw;
+  height: 5vw;
+}
+
+/* --------------------------------------- About Me ---------------------------------------*/
+
+.card-wrapper-about-me {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.5vw;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-about-me {
+  margin: 10px 5px;
+  width: 100%;
+}
+
+.skills-container {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+}
+
+.skills-container > div {
+  margin: 10px 0;
+  flex: 1 1 20vw;
+}
+
+.skills-coding-items {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skills-box.coding {
+  margin-right: 5px;
+}
+.skills-box.extra {
+  margin-left: 5px;
+}
+
+.skills-box > h3 {
+  text-align: center;
+}
+
+.card-about-me,
+.skills-box {
+  padding: 10px;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.3);
+}
+
+.skills-extra-languages {
+  display: flex;
+  padding: 5px;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skills-extra-language {
+  padding: 5px;
+  flex-basis: 7vh;
 }
 
 /* --------------------------------------- Sidebar ---------------------------------------*/
@@ -212,4 +302,54 @@ li {
   font-weight: 300;
   text-transform: uppercase;
   border-left: 1px solid rgb(0, 0, 0, 0.1);
+}
+/* --------------------------------------- Contact ---------------------------------------*/
+
+.content-section.contact {
+  border: none;
+}
+
+.contact-me-container {
+  padding: 2.5vw;
+}
+
+/* --------------------------------------- Footer ---------------------------------------*/
+.footer-container {
+  grid-column: 1/15;
+  height: 40px;
+  width: 100%;
+  margin-top: 40px;
+  padding: 0 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -2px 0 rgb(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+}
+
+/* .footer-container > * {
+  color: var(--palette-offwhite);
+} */
+
+/* --------------------------------------- Media Queries ---------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+  .header-title {
+    font-size: 2.5rem;
+  }
+  .sections-sidebar {
+    display: none;
+  }
+
+  .card-portfolio {
+    flex-direction: column;
+    flex: 1 1 80vw;
+  }
+
+  .skills-container > div {
+    margin: 10px 0;
+  }
 }
