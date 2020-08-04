@@ -8,11 +8,13 @@
   --palette-blue: #36a1d3;
   --palette-purple: #b979e0;
   --text-color: rgb(71, 71, 71);
-
+  --theme-toggle-color: #b979e0;
   --header-color: #38777e;
 
   font-size: 16px;
 }
+
+/* --------------------------------------- Reset and basics ---------------------------------------*/
 
 * {
   padding: 0;
@@ -33,12 +35,14 @@ body {
   background-color: var(--palette-offwhite);
   color: var(--text-color);
   overflow-x: hidden;
+  transition: background-color 0.5s;
 }
 
 .title {
   padding-bottom: 5px;
   color: var(--header-color);
 }
+
 /* --------------------------------------- Navigation Bar ---------------------------------------*/
 .nav-container {
   grid-column: 1/15;
@@ -56,6 +60,7 @@ body {
   z-index: 100;
   font-weight: 300;
   font-family: 'Lato', sans-serif;
+  transition: background-color 0.5s;
 }
 
 .nav-branding {
@@ -333,6 +338,40 @@ li {
 /* .footer-container > * {
   color: var(--palette-offwhite);
 } */
+
+/* --------------------------------------- Dark Theme ---------------------------------------*/
+
+[data-theme='dark'] {
+  --palette-offwhite: rgb(71, 71, 71);
+  --palette-pink: #f89fa1;
+  --palette-yellow: #ffd257;
+  --palette-green: #42c597;
+  --palette-blue: #36a1d3;
+  --palette-purple: #b979e0;
+  --text-color: #fdfafa;
+  --theme-toggle-color: #ffd257;
+
+  --header-color: #b979e0;
+}
+
+.toggle-theme {
+  display: inline-block;
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.toggle-theme input {
+  display: none;
+}
+
+.toggle-svg {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+  fill: var(--theme-toggle-color);
+  cursor: pointer;
+}
 
 /* --------------------------------------- Media Queries ---------------------------------------*/
 
