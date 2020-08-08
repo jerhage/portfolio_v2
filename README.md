@@ -2,6 +2,12 @@
 
 A website I designed to introduce myself and display my work. Strong focus on minimalism and simple, muted colors.
 
+## To Do
+
+[ ] Add custom Dark mode svg
+[ ] Finalize GitHub cards/links
+[ ] Add codepens subsection to portfolio
+
 ## Things I Learned / Improved
 
 - Better Design Principles
