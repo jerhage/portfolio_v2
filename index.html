@@ -424,8 +424,36 @@
         </div>
         <div class="contact-me">
           <div class="contact-me-container">
-            <h4 class="contact-me title">Email:</h4>
-            <p class="contact-me text">Please click <a href="mailto:jhage.codingkr@gmail.com">here</a> to email me!</p>
+            <div class="contact-me-wrapper">  
+              <div class="contact-email">
+                <h4 class="contact-me title">Email:</h4>
+                <p class="contact-me text">Please click <a href="mailto:jhage.codingkr@gmail.com">here</a> to email me!</p>
+
+              </div>
+              <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                <p>
+                  <label>Your Name: <input type="text" name="name" /></label>   
+                </p>
+                <p>
+                  <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                  <label>Your Role: <select name="role[]" multiple>
+                    <option value="recruiter">Recruiter</option>
+                    <option value="start-up">Start Up</option>
+                    <option value="developer">Developer</option>
+                    <option value="designer">Designer</option>
+                    <option value="other">Other</option>
+                  </select></label>
+                </p>
+                <p>
+                  <label>Message: <textarea style="max-width: 100%;" name="message"></textarea></label>
+                </p>
+                <p>
+                  <button type="submit">Send</button>
+                </p>
+              </form>
+            </div>
           </div>
         </div>
     </div>
