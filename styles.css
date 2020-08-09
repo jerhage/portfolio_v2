@@ -284,7 +284,8 @@ img.card-image {
   justify-content: space-evenly;
 }
 
-.skills-extra-language {
+.skills-extra-language,
+.skills-extra-design {
   padding: 5px;
   flex-basis: 7vh;
 }
