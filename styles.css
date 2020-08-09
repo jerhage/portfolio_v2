@@ -181,6 +181,7 @@ body {
 
 .img-wrapper {
   min-width: 15vw;
+  max-width: 30vw;
 }
 
 img.card-image {
