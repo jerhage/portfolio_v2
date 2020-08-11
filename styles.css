@@ -423,4 +423,19 @@ li {
   .skills-container > div {
     margin: 10px 0;
   }
+
+  .skills-coding-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .technology {
+    width: 20vw;
+    height: 20vw;
+  }
 }
