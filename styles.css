@@ -228,7 +228,6 @@ img.card-image {
 
 .technology-icon {
   font-size: calc(1rem + 0.3vw);
-  padding: 0 5px;
   line-height: 5vw;
   width: 5vw;
   height: 5vw;
@@ -264,11 +263,10 @@ img.card-image {
 .skills-coding-items {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
   height: 100%;
   width: 100%;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .skills-box.coding {
@@ -436,18 +434,8 @@ li {
     margin: 10px 0;
   }
 
-  .skills-coding-items {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 10px;
-    height: 100%;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .technology {
-    width: 20vw;
-    height: 20vw;
+  .technology-icon {
+    width: 10vw;
+    height: 10vw;
   }
 }
