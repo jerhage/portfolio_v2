@@ -171,6 +171,7 @@ body {
 .card-wrapper-portfolio {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 2.5vw;
 }
 
