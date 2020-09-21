@@ -4,7 +4,7 @@ A website I designed to introduce myself and display my work. Strong focus on mi
 
 ## To Do
 
-[ ] Add custom Dark mode svg
+[x] Add custom Dark mode svg
 [ ] Finalize GitHub cards/links
 [ ] Add codepens subsection to portfolio
 
