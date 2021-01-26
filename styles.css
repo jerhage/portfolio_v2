@@ -187,7 +187,7 @@ body {
 .card-portfolio {
   margin: 10px;
   display: flex;
-  flex: 1 1 30vw;
+  flex: 1 1 50vw;
   max-width: 100%;
   box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.3);
 }
